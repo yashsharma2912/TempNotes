@@ -128,9 +128,14 @@ body{
     .top{
         display: flex;
         justify-content: space-between;
-        padding: 0.8vw 1vw;
+        padding: 0vw 1vw;
+        height: 4vw;
         font-size: 1.8vw;
         align-items: center;
+          h3{
+            color: greenyellow;
+            font-size: 1.6vw;
+          }
         .doc{
             color: gray;
         } 
@@ -142,7 +147,12 @@ body{
          }
     }
     .middle{
-       background-color: red;
+       p{
+        margin-bottom: 1.5vw;
+        padding: 0vw 1.5vw;
+        cursor: text;
+        max-height: 20vw;
+       }
     }
     .bot{
         display: flex;
@@ -151,6 +161,7 @@ body{
         align-items: center;
         max-height: 2.9vw;
         overflow: hidden;
+        text-wrap: nowrap;
         .dot{
             width: 0.7vw;
             height: 0.7vw;
