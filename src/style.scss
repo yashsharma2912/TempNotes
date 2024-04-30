@@ -34,6 +34,7 @@ body{
     }
     .add{
         button{
+            z-index: 9;
           position: relative;
           width:5vw;
           height:5vw;
@@ -56,7 +57,7 @@ body{
         }
         .cardForm{
             position: absolute;
-            top: 8vw;
+            top: 4.5vw;
             right: 7vw;
             backdrop-filter: blur(15px);
             background-color: rgba(35, 11, 105, 0.448);
@@ -67,16 +68,25 @@ body{
             border: 1px solid rgb(106, 102, 102);
             border-radius: 5px;
             padding: 2vw;
-            input{
+            textarea{
                border: none;
                outline: none;
-               padding: 1vw 2vw;
+               padding: 1vw;
+               width: 20vw;
+               height: 23vw;
                border-radius: 5px;
+                
+            }
+            ::placeholder{
+                font-size: 1.45vw;
+                letter-spacing: 0vw;
             }
             button{
                 border: none;
                 outline: none;
                 cursor: pointer;
+                background-color: orangered;
+                color: white;
                 width: 9vw;
                 height: 2.5vw;
                 border-radius: 5px;

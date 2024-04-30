@@ -15,7 +15,7 @@ const Navbar = () => {
          <div className="add">
              <button onClick={() => setCf(!cf)}><IoMdAdd className={cf ? 'addbtn activa' : 'addbtn'}/></button>
             {cf && (<div className="cardForm">
-                  <input type="text" name='note' placeholder='Write your short note...📝' />
+                  <textarea type="text" name='note' placeholder='Write your short note...📝' />
                   <button>Add Note</button>
              </div>) }
          </div>
