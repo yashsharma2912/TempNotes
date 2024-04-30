@@ -6,7 +6,7 @@ import { IoMdAdd } from "react-icons/io";
 
 const Navbar = () => {
     //set Form
-    const[cf,setCf] = useState(true);
+    const[cf,setCf] = useState(false);
     //active 
     const[active,setActive] = useState(false);
   return (

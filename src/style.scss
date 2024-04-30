@@ -36,8 +36,8 @@ body{
         button{
             z-index: 9;
           position: relative;
-          width:5vw;
-          height:5vw;
+          width:4.5vw;
+          height:4.5vw;
           border-radius: 50%;
           border: none;
           outline: none;
@@ -69,6 +69,8 @@ body{
             border-radius: 5px;
             padding: 2vw;
             textarea{
+               font-size: 1.45vw;
+                resize: none;
                border: none;
                outline: none;
                padding: 1vw;
@@ -96,3 +98,33 @@ body{
 }
 
 // navbar //
+
+// card // 
+
+.card{
+    border: 1px solid rgb(53, 55, 55);
+    width: 18vw;
+    height: fit-content;
+    cursor: move;
+    background-color: rgba(21, 29, 35, 0.845);
+    backdrop-filter: blur(11px);
+    border-radius: 8px;
+    .top{
+        display: flex;
+        justify-content: space-between;
+        padding: 0.8vw 1vw;
+        font-size: 1.8vw;
+        align-items: center;
+        .doc{
+            color: gray;
+        } 
+        .close{
+            cursor: pointer;
+            position: relative;
+            left: 0.5vw;
+            color: red;
+         }
+    }
+}
+
+// card // 
