@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-       Home
+       Home ke sath chai
     </>
   )
 }
