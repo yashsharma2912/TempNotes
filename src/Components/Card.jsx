@@ -1,13 +1,19 @@
-import React from 'react'
+import React,{useRef} from 'react'
+import { motion } from 'framer-motion';
+
 import { IoIosDocument } from "react-icons/io";
 import { IoClose } from "react-icons/io5";
 import { FaAngleDown } from "react-icons/fa6";
 
 
+// const constraintsRef = useRef(null)
+
 const Card = () => {
   return (
-    <div className='card'>
+    <div className="cardCont" >
+    <motion.div drag className='card'>
         <div className="top">
+            
            <IoIosDocument className='doc'/>
            <IoClose className='close'/> 
         </div>   
@@ -26,6 +32,7 @@ const Card = () => {
            
             
         </div>     
+    </motion.div>
     </div>
   )
 }

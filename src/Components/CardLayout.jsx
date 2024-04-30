@@ -3,7 +3,10 @@ import Card from "../Components/Card"
 
 const CardLayout = () => {
   return (
-    <div>
+    <div className='cardLayout'>
+        <Card/>
+        <Card/>
+        <Card/>
         <Card/>
     </div>
   )
