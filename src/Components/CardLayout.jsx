@@ -1,15 +1,14 @@
-import React from 'react'
-import Card from "../Components/Card"
+import React from 'react';
+import Card from "./Card";
 
-const CardLayout = () => {
+const CardLayout = ({ tasks }) => {
   return (
     <div className='cardLayout'>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
+      {tasks.map((task, index) => (
+        <Card key={index} task={task} />
+      ))}
     </div>
-  )
+  );
 }
 
-export default CardLayout
+export default CardLayout;
