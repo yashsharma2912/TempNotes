@@ -13,6 +13,7 @@ function App() {
       <h1>TempNotes</h1>
       <CardLayout/>
     </div>
+      
     </>
   )
 }

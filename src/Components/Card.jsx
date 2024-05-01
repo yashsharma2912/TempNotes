@@ -8,7 +8,15 @@ import { FaAngleDown } from "react-icons/fa6";
 
 // const constraintsRef = useRef(null)
 
+
 const Card = () => {
+   const [status,setStatus] = useState(false);
+    const[changeState,setChangeState] = useState("pending")
+
+   const statusChange = (curStatus) =>{
+       setChangeState(curStatus);
+       setStatus(false);
+   }
      
   return (
     <div className="cardCont" >
@@ -23,12 +31,17 @@ const Card = () => {
         </div>
         <div className="bot"> 
          <div className="lb">
-            <div className="dot"></div>
-            <h3>Pending</h3>
+            <div className={changeState==="Pending" ? "dot yellow" : changeState ==="Urgent" ? "dot red" :changeState ==="Solved" ? "dot green" : null}></div>
+          {changeState ==="Pending" ?  <h3>Pending</h3> : changeState ==="Urgent" ? <h3>Urgent</h3> : changeState ==="Solved" ? <h3>Solved</h3> : null }
          </div>
          <div className="rb">
-              <h4>Select Status</h4> 
-              <FaAngleDown className='down'/>
+              <h4 onClick={()=>setStatus(!status)}>Select Status  <FaAngleDown className='down'/></h4> 
+             
+                {status && (<div className="selectStatus">
+                     <span onClick={()=>statusChange("Pending")}>Pending</span>
+                     <span onClick={()=>statusChange("Urgent")}>Urgent</span>
+                     <span onClick={()=>statusChange("Solved")}>Solved</span>
+                 </div> ) }
          </div>
            
             
