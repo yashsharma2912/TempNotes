@@ -18,7 +18,7 @@ const Card = ({ task }) => {
       <motion.div drag className='card'>
         <div className="top">
           <IoIosDocument className='doc'/>
-          <h3>Your Note</h3>
+          <h3>TempNote</h3>
           <IoClose className='close'/> 
         </div>
         <div className="middle">
