@@ -27,7 +27,7 @@ const Card = () => {
            <IoClose className='close'/> 
         </div>   
         <div className="middle">
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam mollitia aliquid laboriosam culpa animi dolor, autem ex iste nostrum itaque!</p>
+           <p></p>
         </div>
         <div className="bot"> 
          <div className="lb">
