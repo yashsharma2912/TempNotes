@@ -10,12 +10,19 @@ function App() {
   const addTask = (task) => {
     setTasks([...tasks, task]);
   };
+ 
+  //function to delete task 
+  const handleDelete = (index) => {
+    let reduceTask = [...tasks];
+    reduceTask.splice(index);
 
+    setTasks(reduceTask);
+  };
   return (
     <div className="main">
       <Navbar addTask={addTask} />
       <h1>TempNotes</h1>
-      <CardLayout tasks={tasks} />
+      <CardLayout tasks={tasks} handleDelete={handleDelete} />
     </div>
   );
 }

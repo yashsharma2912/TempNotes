@@ -4,7 +4,7 @@ import { IoIosDocument } from "react-icons/io";
 import { IoClose } from 'react-icons/io5';
 import { FaAngleDown } from "react-icons/fa6";
 
-const Card = ({ task }) => {
+const Card = ({ index,task,handleDelete }) => {
   const [status, setStatus] = useState(false);
   const [changeState, setChangeState] = useState("pending");
 
@@ -13,13 +13,17 @@ const Card = ({ task }) => {
     setStatus(false);
   };
 
+  const deleteTask = () => {
+    handleDelete(index);
+  }
+
   return (
     <div className="cardCont">
       <motion.div drag className='card'>
         <div className="top">
           <IoIosDocument className='doc'/>
           <h3>TempNote</h3>
-          <IoClose className='close'/> 
+          <IoClose onClick={deleteTask} className='close'/> 
         </div>
         <div className="middle">
           <p>{task}</p>
