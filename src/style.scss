@@ -237,3 +237,267 @@ body{
 }
 
 // card // 
+
+
+// media queries //
+
+@media screen and (max-width: 700px) {
+    .navbar{
+        display: flex;
+        justify-content:space-between;
+        gap: 15vw;
+        align-items: center;
+        
+        h3{
+            font-size: 2.5vw;
+    
+        }
+        .add{
+            button{
+              
+              
+           .addbtn{
+                font-size: 3.8vw;
+                transition: all ease 0.5s;
+              }
+             }
+            .cardForm{
+                
+                height: 12vw;
+                top: 6vw;
+                right: 6vw;
+                gap: 1vw;
+                textarea{
+                   width: 12vw;
+                   height: 10vw;  
+                }
+                button{
+                    padding: 1.5vw;
+                    width: 8vw;
+                    font-size: 1.5vw;
+                    text-wrap: nowrap;
+                    height: 2.5vw;
+                  }
+            }
+        }
+    }
+   // card 
+   .card{
+    border: 1px solid rgb(53, 55, 55);
+    width: 22vw;
+    height: 26vw;
+    border-radius: 6px;
+    .top{
+        display: flex;
+        justify-content: space-between;
+        padding: 0vw 1vw;
+        height: 3.5vw;
+        border-bottom: 1px solid rgba(211, 211, 211, 0.242);
+        font-size: 1.8vw;
+        align-items: center;
+          h3{
+            color: rgb(210, 204, 204);
+            font-weight: 500;
+            font-size: 1.6vw;
+          }
+        .doc{
+            color: gray;
+        } 
+        .close{
+            cursor: pointer;
+            position: relative;
+            left: 0.5vw;
+            color: red;
+         }
+    }
+    .middle{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        height: 20vw;
+       p{
+        padding: 0vw 1.5vw;
+        font-size: 1.2vw;
+        width: 15vw;
+        text-wrap: wrap;
+        cursor: text;
+        max-height: 10vw;
+       }
+    }
+    .bot{
+        display: flex;
+        border-top: 0.1px solid rgba(211, 211, 211, 0.576);
+        justify-content: space-between;
+        align-items: center;
+        max-height: 3.9vw;
+        border-radius: 0 0 6px 6px;
+         .dot{
+            width: 0.7vw;
+            height: 0.7vw;
+           
+            border-radius:50%;
+        }
+        .lb{
+            padding: 0vw 1vw;
+            display: flex;
+            align-items: center;
+            gap: 0.5vw;
+             h3{
+                font-size: 1.4vw;
+             }
+        }
+        .rb{
+            position: relative;
+            padding: 0vw 0.5vw;
+            height: 2.9vw;
+            display: flex;
+            gap: 0.3vw;
+            align-items: center;
+            cursor: pointer;
+            // background-color: red;
+            h4{
+                font-weight: 400;
+                font-size: 1.4vw;
+            }
+             .down{
+                position: relative;
+                top: 0.25vw;
+                font-size: 1.4vw;
+             }
+        }
+        .selectStatus{
+            position: absolute;
+            top: 2.6vw;
+            right: 0.3vw;
+            background-color: rgba(128, 128, 128, 0.627);
+            border-radius: 5px;
+            width: 6vw;
+            display: flex;
+            align-items:flex-start;
+            padding: 0.8vw;
+            flex-direction: column;
+             span{
+                font-size: 1.4vw;
+                cursor: pointer;
+             }
+        }
+    }
+}
+ 
+
+
+  }
+
+//mobile devices
+
+  @media (max-width:500px) {
+    .card{
+        border: 1px solid rgb(53, 55, 55);
+        width: 32vw;
+        height: 35vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        cursor: move;
+        
+        background-color: rgba(21, 29, 35, 0.845);
+        backdrop-filter: blur(11px);
+        border-radius: 4px;
+        .top{
+            display: flex;
+            justify-content: space-between;
+            padding: 0vw 1vw;
+            height: 4.5vw;
+            border-bottom: 1px solid rgba(211, 211, 211, 0.242);
+            font-size: 1.8vw;
+            align-items: center;
+              h3{
+                color: rgb(210, 204, 204);
+                font-weight: 500;
+                font-size: 1.6vw;
+              }
+            .doc{
+                color: gray;
+            } 
+            .close{
+                cursor: pointer;
+                position: relative;
+                left: 0.5vw;
+                color: red;
+             }
+        }
+        .middle{
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            height: 20vw;
+           p{
+            padding: 0vw 0vw;
+            font-size: 1.2vw;
+            width: 15vw;
+            text-wrap: wrap;
+            cursor: text;
+            max-height: 10vw;
+           }
+        }
+        .bot{
+            display: flex;
+            border-top: 0.1px solid rgba(211, 211, 211, 0.576);
+            align-items: center;
+            height: 4.9vw;
+            border-radius: 0 0 0.5vw 0.5vw;
+            .dot{
+                width: 0.9vw;
+                height: 0.9vw;
+            }
+            .lb{
+                padding: 0vw 1vw;
+                display: flex;
+                align-items: center;
+                gap: 0.5vw;
+                 h3{
+                    font-size: 1.8vw;
+                 }
+            }
+            .rb{
+                position: relative;
+                padding: 0vw 0.5vw;
+                height: 2.9vw;
+                display: flex;
+                gap: 0.3vw;
+                align-items: center;
+                cursor: pointer;
+                // background-color: red;
+                h4{
+                    font-weight: 400;
+                    font-size: 1.8vw;
+                }
+                 .down{
+                    position: relative;
+                    top: 0.25vw;
+                    font-size: 1.8vw;
+                 }
+            }
+            .selectStatus{
+                position: absolute;
+                top: 2.6vw;
+                right: 0.3vw;
+                background-color: rgba(128, 128, 128, 0.627);
+                border-radius: 5px;
+                width: 6vw;
+                display: flex;
+                align-items:flex-start;
+                padding: 0.8vw;
+                flex-direction: column;
+                 span{
+                    font-size: 1.5vw;
+                    cursor: pointer;
+                 }
+            }
+        }
+    }
+    
+    
+  }
+// media queries //
