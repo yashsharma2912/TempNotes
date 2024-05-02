@@ -2,7 +2,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 body{
-    background-color: rgb(29, 10, 67);
+    background-color: rgb(24, 15, 41);
     color: white;
     overflow-x: hidden;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -50,7 +50,7 @@ body{
     }
     .add{
         button{
-            z-index: 9;
+          z-index: 9;
           position: relative;
           width:4.5vw;
           height:4.5vw;
@@ -74,8 +74,8 @@ body{
         .cardForm{
             z-index: 8;
             position: absolute;
-            top: 4.5vw;
-            right: 7vw;
+            top: 4vw;
+            right: 5.5vw;
             backdrop-filter: blur(15px);
             background-color: rgba(53, 52, 56, 0.448);
             display: flex;
@@ -86,18 +86,18 @@ body{
             border-radius: 5px;
             padding: 2vw;
             textarea{
-               font-size: 1.45vw;
+               font-size: 1vw;
                 resize: none;
                border: none;
                outline: none;
                padding: 1vw;
-               width: 20vw;
-               height: 23vw;
+               width: 15vw;
+               height: 10vw;
                border-radius: 5px;
                 
             }
             ::placeholder{
-                font-size: 1.45vw;
+                font-size: 1vw;
                 letter-spacing: 0vw;
             }
             button{
@@ -131,11 +131,11 @@ body{
 .card{
     border: 1px solid rgb(53, 55, 55);
     width: 18vw;
-    min-height: 14vw;
+    height: 25vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: fit-content;
+    
     cursor: move;
     
     background-color: rgba(21, 29, 35, 0.845);
@@ -145,7 +145,8 @@ body{
         display: flex;
         justify-content: space-between;
         padding: 0vw 1vw;
-        height: 4vw;
+        height: 3.5vw;
+        border-bottom: 1px solid rgba(211, 211, 211, 0.242);
         font-size: 1.8vw;
         align-items: center;
           h3{
@@ -164,13 +165,17 @@ body{
          }
     }
     .middle{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        height: 20vw;
        p{
-        margin-bottom: 1.5vw;
         padding: 0vw 1.5vw;
+        font-size: 1.2vw;
         width: 15vw;
         text-wrap: wrap;
         cursor: text;
-        max-height: 20vw;
+        max-height: 10vw;
        }
     }
     .bot{
